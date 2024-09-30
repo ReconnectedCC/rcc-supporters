@@ -1,0 +1,210 @@
+[19:46:28] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.16.5
+[19:46:28] [main/INFO] (FabricLoader) Loading 50 mods:
+	- blf-scheduler 1.0.3-1.20.1
+	- fabric-api 0.92.2+1.20.1
+	- fabric-api-base 0.4.31+1802ada577
+	- fabric-api-lookup-api-v1 1.6.36+1802ada577
+	- fabric-biome-api-v1 13.0.13+1802ada577
+	- fabric-block-api-v1 1.0.11+1802ada577
+	- fabric-block-view-api-v2 1.0.1+1802ada577
+	- fabric-command-api-v1 1.2.34+f71b366f77
+	- fabric-command-api-v2 2.2.13+1802ada577
+	- fabric-commands-v0 0.2.51+df3654b377
+	- fabric-containers-v0 0.1.64+df3654b377
+	- fabric-content-registries-v0 4.0.11+1802ada577
+	- fabric-convention-tags-v1 1.5.5+1802ada577
+	- fabric-crash-report-info-v1 0.2.19+1802ada577
+	- fabric-data-attachment-api-v1 1.0.0+de0fd6d177
+	- fabric-data-generation-api-v1 12.3.4+1802ada577
+	- fabric-dimensions-v1 2.1.54+1802ada577
+	- fabric-entity-events-v1 1.6.0+1c78457f77
+	- fabric-events-interaction-v0 0.6.2+1802ada577
+	- fabric-events-lifecycle-v0 0.2.63+df3654b377
+	- fabric-game-rule-api-v1 1.0.40+1802ada577
+	- fabric-gametest-api-v1 1.2.13+1802ada577
+	- fabric-item-api-v1 2.1.28+1802ada577
+	- fabric-item-group-api-v1 4.0.12+1802ada577
+	- fabric-lifecycle-events-v1 2.2.22+1802ada577
+	- fabric-loot-api-v2 1.2.1+1802ada577
+	- fabric-loot-tables-v1 1.1.45+9e7660c677
+	- fabric-message-api-v1 5.1.9+1802ada577
+	- fabric-mining-level-api-v1 2.1.50+1802ada577
+	- fabric-networking-api-v1 1.3.11+1802ada577
+	- fabric-networking-v0 0.3.51+df3654b377
+	- fabric-object-builder-api-v1 11.1.3+1802ada577
+	- fabric-particles-v1 1.1.2+1802ada577
+	- fabric-permissions-api-v0 0.2-SNAPSHOT
+	- fabric-recipe-api-v1 1.0.21+1802ada577
+	- fabric-registry-sync-v0 2.3.3+1802ada577
+	- fabric-rendering-data-attachment-v1 0.3.37+92a0d36777
+	- fabric-rendering-fluids-v1 3.0.28+1802ada577
+	- fabric-resource-conditions-api-v1 2.3.8+1802ada577
+	- fabric-resource-loader-v0 0.11.10+1802ada577
+	- fabric-screen-handler-api-v1 1.3.30+1802ada577
+	- fabric-transfer-api-v1 3.3.5+8dd72ea377
+	- fabric-transitive-access-wideners-v1 4.3.1+1802ada577
+	- fabricloader 0.16.5
+	- java 17
+	- luckperms 5.4.102
+	- minecraft 1.20.1
+	- mixinextras 0.4.1
+	- owo 0.11.2+1.20
+	- rcc-supporters 1.0-SNAPSHOT
+[19:46:34] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/afons/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.3+mixin.0.8.7/51ee0a44ab05f6fddd66b09e66b3a16904f9c55d/sponge-mixin-0.15.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[19:46:34] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[19:46:34] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[19:46:34] [main/WARN] (FabricLoader/Mixin) Error loading class: fr/catcore/server/translations/api/resource/language/SystemDelegatedLanguage (java.lang.ClassNotFoundException: fr/catcore/server/translations/api/resource/language/SystemDelegatedLanguage)
+[19:46:35] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[19:46:35] [main/WARN] (FabricLoader/Mixin) Error loading class: org/quiltmc/loader/impl/game/minecraft/Hooks (java.lang.ClassNotFoundException: org/quiltmc/loader/impl/game/minecraft/Hooks)
+[19:46:44] [main/INFO] (owo) There is a 1% chance that instead of Frog, you get Froge!
+[19:46:44] [main/INFO] (owo) Services frozen by 'net.minecraft.server.Main'
+[19:46:44] [main/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[19:46:46] [main/INFO] (Minecraft) Loaded 7 recipes
+[19:46:46] [main/INFO] (Minecraft) Loaded 1271 advancements
+[19:46:47] [main/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 3.028 ms
+[19:46:47] [Server thread/INFO] (Minecraft)         __    
+[19:46:47] [Server thread/INFO] (Minecraft)   |    |__)   LuckPerms v5.4.102
+[19:46:47] [Server thread/INFO] (Minecraft)   |___ |      Running on Fabric - fabric@0.92.2+1.20.1
+[19:46:47] [Server thread/INFO] (Minecraft) 
+[19:46:47] [Server thread/INFO] (luckperms) Loading configuration...
+[19:46:47] [Server thread/INFO] (luckperms) Loading storage provider... [H2]
+[19:46:48] [Server thread/INFO] (luckperms) Loading internal permission managers...
+[19:46:48] [Server thread/INFO] (luckperms) Performing initial data load...
+[19:46:48] [Server thread/INFO] (luckperms) Successfully enabled. (took 799ms)
+[19:46:48] [Server thread/INFO] (Minecraft) Starting minecraft server version 1.20.1
+[19:46:48] [Server thread/INFO] (Minecraft) Loading properties
+[19:46:48] [Server thread/INFO] (Minecraft) Default game type: SURVIVAL
+[19:46:48] [Server thread/INFO] (Minecraft) Generating keypair
+[19:46:48] [Server thread/INFO] (Minecraft) Starting Minecraft server on *:25565
+[19:46:48] [Server thread/INFO] (Minecraft) Using default channel type
+[19:46:49] [Server thread/INFO] (Minecraft) Preparing level "world"
+[19:46:50] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[19:46:53] [Worker-Main-3/INFO] (Minecraft) Preparing spawn area: 0%
+[19:46:53] [Worker-Main-10/INFO] (Minecraft) Preparing spawn area: 0%
+[19:46:53] [Worker-Main-11/INFO] (Minecraft) Preparing spawn area: 0%
+[19:46:53] [Worker-Main-11/INFO] (Minecraft) Preparing spawn area: 0%
+[19:46:53] [Worker-Main-3/INFO] (Minecraft) Preparing spawn area: 0%
+[19:46:53] [Worker-Main-11/INFO] (Minecraft) Preparing spawn area: 0%
+[19:46:53] [Worker-Main-12/INFO] (Minecraft) Preparing spawn area: 0%
+[19:46:53] [Worker-Main-6/INFO] (Minecraft) Preparing spawn area: 26%
+[19:46:54] [Worker-Main-5/INFO] (Minecraft) Preparing spawn area: 93%
+[19:46:54] [Server thread/INFO] (Minecraft) Time elapsed: 4043 ms
+[19:46:54] [Server thread/INFO] (Minecraft) Done (5.438s)! For help, type "help"
+[19:46:54] [Server thread/INFO] (rcc-supporters) Reloading Supporters
+[19:46:54] [Server thread/INFO] (HikariDataSource) HikariPool-1 - Starting...
+[19:46:55] [Server thread/ERROR] (HikariPool) HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to 127.0.0.1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:352) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.Driver.makeConnection(Driver.java:446) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.4.jar:?]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:121) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81) ~[HikariCP-5.0.1.jar:?]
+	at com.dieselpoint.norm.Database.getDataSource(Database.java:93) ~[norm-1.0.5.jar:?]
+	at com.dieselpoint.norm.Database.getConnection(Database.java:142) ~[norm-1.0.5.jar:?]
+	at com.dieselpoint.norm.Query.results(Query.java:187) ~[norm-1.0.5.jar:?]
+	at cc.reconnected.Supporter.reloadSupporters(Supporter.java:74) ~[main/:?]
+	at cc.reconnected.Main$1.run(Main.java:39) ~[main/:?]
+	at io.github.blumbo.blfscheduler.BlfScheduler.runCurrentTimeTask(BlfScheduler.java:73) ~[BlfScheduler-1.0.3-1.20.1.jar:?]
+	at io.github.blumbo.blfscheduler.BlfScheduler.tick(BlfScheduler.java:65) ~[BlfScheduler-1.0.3-1.20.1.jar:?]
+	at io.github.blumbo.blfscheduler.BlfSchedulerTicker.tick(BlfSchedulerTicker.java:6) ~[BlfScheduler-1.0.3-1.20.1.jar:?]
+	at net.minecraft.server.MinecraftServer.handler$zgm000$blf-scheduler$tick(MinecraftServer.java:4306) ~[minecraft-common-5527208e7b-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java) ~[minecraft-common-5527208e7b-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:671) ~[minecraft-common-5527208e7b-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:265) ~[minecraft-common-5527208e7b-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268) ~[postgresql-42.7.4.jar:?]
+	... 24 more
+[19:46:55] [Server thread/ERROR] (Minecraft) Encountered an unexpected exception
+com.dieselpoint.norm.DbException: com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to 127.0.0.1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at com.dieselpoint.norm.Database.getConnection(Database.java:147) ~[norm-1.0.5.jar:?]
+	at com.dieselpoint.norm.Query.results(Query.java:187) ~[norm-1.0.5.jar:?]
+	at cc.reconnected.Supporter.reloadSupporters(Supporter.java:74) ~[main/:?]
+	at cc.reconnected.Main$1.run(Main.java:39) ~[main/:?]
+	at io.github.blumbo.blfscheduler.BlfScheduler.runCurrentTimeTask(BlfScheduler.java:73) ~[BlfScheduler-1.0.3-1.20.1.jar:?]
+	at io.github.blumbo.blfscheduler.BlfScheduler.tick(BlfScheduler.java:65) ~[BlfScheduler-1.0.3-1.20.1.jar:?]
+	at io.github.blumbo.blfscheduler.BlfSchedulerTicker.tick(BlfSchedulerTicker.java:6) ~[BlfScheduler-1.0.3-1.20.1.jar:?]
+	at net.minecraft.server.MinecraftServer.handler$zgm000$blf-scheduler$tick(MinecraftServer.java:4306) ~[minecraft-common-5527208e7b-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java) ~[minecraft-common-5527208e7b-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:671) ~[minecraft-common-5527208e7b-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:265) ~[minecraft-common-5527208e7b-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Connection to 127.0.0.1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:596) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:582) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81) ~[HikariCP-5.0.1.jar:?]
+	at com.dieselpoint.norm.Database.getDataSource(Database.java:93) ~[norm-1.0.5.jar:?]
+	at com.dieselpoint.norm.Database.getConnection(Database.java:142) ~[norm-1.0.5.jar:?]
+	... 11 more
+Caused by: org.postgresql.util.PSQLException: Connection to 127.0.0.1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:352) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.Driver.makeConnection(Driver.java:446) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.4.jar:?]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:121) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81) ~[HikariCP-5.0.1.jar:?]
+	at com.dieselpoint.norm.Database.getDataSource(Database.java:93) ~[norm-1.0.5.jar:?]
+	at com.dieselpoint.norm.Database.getConnection(Database.java:142) ~[norm-1.0.5.jar:?]
+	... 11 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.Driver.makeConnection(Driver.java:446) ~[postgresql-42.7.4.jar:?]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.4.jar:?]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:121) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81) ~[HikariCP-5.0.1.jar:?]
+	at com.dieselpoint.norm.Database.getDataSource(Database.java:93) ~[norm-1.0.5.jar:?]
+	at com.dieselpoint.norm.Database.getConnection(Database.java:142) ~[norm-1.0.5.jar:?]
+	... 11 more
+[19:46:55] [Server thread/ERROR] (Minecraft) This crash report has been saved to: D:\IdeaProjects\rcc-supporters\run\.\crash-reports\crash-2024-09-28_19.46.55-server.txt
+[19:46:55] [Server thread/INFO] (luckperms) Starting shutdown process...
+[19:46:55] [Server thread/INFO] (luckperms) Closing storage...
+[19:46:55] [Server thread/INFO] (luckperms) Goodbye!
+[19:46:55] [Server thread/INFO] (Minecraft) Stopping server
+[19:46:55] [Server thread/INFO] (Minecraft) Saving players
+[19:46:55] [Server thread/INFO] (Minecraft) Saving worlds
+[19:46:57] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:46:58] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[19:46:58] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[19:46:58] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:46:58] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:46:58] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:46:58] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
