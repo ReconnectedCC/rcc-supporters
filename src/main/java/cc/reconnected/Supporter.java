@@ -62,18 +62,12 @@ public class Supporter {
     public static void reloadSupporters(Database db, UserManager userManager, GroupManager groupManager) {
         Main.LOGGER.info("Reloading Supporters");
         groupManager.modifyGroup("SupporterTier1", (Group group) -> {
-            group.data().clear(NodeType.PREFIX::matches);
-            group.data().add(PrefixNode.builder("[S1]", 1000).build());
             group.data().add(PermissionNode.builder("rcc.supporter.tier1").build());
         }).join();
         groupManager.modifyGroup("SupporterTier2", (Group group) -> {
-            group.data().clear(NodeType.PREFIX::matches);
-            group.data().add(PrefixNode.builder("[S2]", 1000).build());
             group.data().add(PermissionNode.builder("rcc.supporter.tier2").build());
         }).join();
         groupManager.modifyGroup("SupporterTier3", (Group group) -> {
-            group.data().clear(NodeType.PREFIX::matches);
-            group.data().add(PrefixNode.builder("[S3]", 1000).build());
             group.data().add(PermissionNode.builder("rcc.supporter.tier3").build());
         }).join();
         List<Supporter> SupporterList = db.table("supporters").results(Supporter.class);
