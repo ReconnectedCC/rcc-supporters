@@ -1,8 +1,6 @@
 package cc.reconnected;
 
 import com.dieselpoint.norm.Database;
-import io.github.blumbo.blfscheduler.BlfRunnable;
-import io.github.blumbo.blfscheduler.BlfScheduler;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
@@ -14,6 +12,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 
 public class Main implements ModInitializer {
@@ -23,11 +24,16 @@ public class Main implements ModInitializer {
     public static GroupManager groupManager;
     public static Database db;
     public static List<Supporter> cachedSupporters;
+    private ScheduledExecutorService scheduler;
     @Override
     public void onInitialize() {
         ServerLifecycleEvents.SERVER_STARTED.register(server -> onStartServer());
-        CommandRegistrationCallback.EVENT.register(SupporterCommand::register1);
-        CommandRegistrationCallback.EVENT.register(SupporterCommand::register2);
+        ServerLifecycleEvents.SERVER_STOPPING.register((server) -> {
+            if (scheduler != null && !scheduler.isShutdown()) {
+                scheduler.shutdown();
+            }
+        });
+        CommandRegistrationCallback.EVENT.register(SupporterCommand::register);
     }
     public void onStartServer() {
         luckPerms = LuckPermsProvider.get();
@@ -36,11 +42,9 @@ public class Main implements ModInitializer {
         db = new Database();
         final cc.reconnected.RccSupporterConfig config = cc.reconnected.RccSupporterConfig.createAndLoad();
         db.setJdbcUrl(config.jdbcUrl());
-        BlfScheduler.repeat(0, 20 * 60 * 5, new BlfRunnable() {
-            @Override
-            public void run() {
-                Supporter.reloadSupporters(db, userManager, groupManager);
-            }
-        });
+        scheduler = Executors.newSingleThreadScheduledExecutor();
+        scheduler.scheduleAtFixedRate(() -> {
+            Supporter.reloadSupporters(db, userManager, groupManager);
+            },0, 5, TimeUnit.MINUTES);
     }
 }

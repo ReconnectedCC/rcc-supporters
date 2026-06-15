@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.7-SNAPSHOT'
+    id 'fabric-loom' version '1.11-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -53,9 +53,7 @@ dependencies {
 
     // include this if you don't want force your users to install owo
     // sentinel will warn them and give the option to download it automatically
-    include "io.wispforest:owo-sentinel:${project.owo_version}"
-    include(modImplementation "io.github.blumbo:BlfScheduler:1.0.3-1.20.1")
-}
+    include "io.wispforest:owo-sentinel:${project.owo_version}"}
 
 processResources {
     inputs.property "version", project.version
@@ -70,7 +68,7 @@ processResources {
     }
 }
 
-def targetJavaVersion = 17
+def targetJavaVersion = 21
 tasks.withType(JavaCompile).configureEach {
     // ensure that the encoding is set to UTF-8, no matter what the system default is
     // this fixes some edge cases with special characters not displaying correctly

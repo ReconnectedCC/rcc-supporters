@@ -17,10 +17,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 import java.util.logging.Logger;
 
 import static com.google.common.base.Predicates.and;
@@ -61,6 +58,7 @@ public class Supporter {
     @Transient
     public static void reloadSupporters(Database db, UserManager userManager, GroupManager groupManager) {
         Main.LOGGER.info("Reloading Supporters");
+        /*
         groupManager.modifyGroup("SupporterTier1", (Group group) -> {
             group.data().add(PermissionNode.builder("rcc.supporter.tier1").build());
         }).join();
@@ -70,6 +68,7 @@ public class Supporter {
         groupManager.modifyGroup("SupporterTier3", (Group group) -> {
             group.data().add(PermissionNode.builder("rcc.supporter.tier3").build());
         }).join();
+         */
         List<Supporter> SupporterList = db.table("supporters").results(Supporter.class);
         if (Main.cachedSupporters != null) {
             if (Main.cachedSupporters.equals(SupporterList)) {
@@ -111,5 +110,27 @@ public class Supporter {
                 }
             }).join();
         }
+    }
+
+    @Override
+    public final boolean equals(Object o) {
+        if (!(o instanceof Supporter supporter)) return false;
+
+        return id == supporter.id && duration == supporter.duration && totaldonated == supporter.totaldonated && Objects.equals(checkoutid, supporter.checkoutid) && Objects.equals(email, supporter.email) && Objects.equals(uuid, supporter.uuid) && Objects.equals(discordid, supporter.discordid) && Objects.equals(username, supporter.username) && Objects.equals(firsttime, supporter.firsttime) && Objects.equals(begincurrent, supporter.begincurrent);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id;
+        result = 31 * result + Objects.hashCode(checkoutid);
+        result = 31 * result + Objects.hashCode(email);
+        result = 31 * result + Objects.hashCode(uuid);
+        result = 31 * result + Objects.hashCode(discordid);
+        result = 31 * result + Objects.hashCode(username);
+        result = 31 * result + Objects.hashCode(firsttime);
+        result = 31 * result + Objects.hashCode(begincurrent);
+        result = 31 * result + duration;
+        result = 31 * result + totaldonated;
+        return result;
     }
 }

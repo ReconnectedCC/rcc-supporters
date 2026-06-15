@@ -1,5 +1,6 @@
 package cc.reconnected;
 
+import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import me.lucko.fabric.api.permissions.v0.Permissions;
@@ -17,7 +18,7 @@ import java.util.Objects;
 import static net.minecraft.server.command.CommandManager.*;
 
 public class SupporterCommand {
-    public static void register1(CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess registryAccess, CommandManager.RegistrationEnvironment environment) {
+    public static void register(CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess registryAccess, CommandManager.RegistrationEnvironment environment) {
         dispatcher.register(
                 literal("supporter")
                         .requires(Permissions.require("rcc.supporter"))
@@ -75,21 +76,17 @@ public class SupporterCommand {
                                                 user.data().clear(NodeType.PREFIX::matches);
                                                 user.data().add(PrefixNode.builder("[S" + IntegerArgumentType.getInteger(context, "tier") + "]", 10000).build());
                                             });
-                                            return 1;
+                                            return Command.SINGLE_SUCCESS;
                                         })
                                 )
                         )
-        );
-    }
-        public static void register2(CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess registryAccess, CommandManager.RegistrationEnvironment environment) {
-
-            dispatcher.register(
-                literal("supporterreload") //TODO: Move this to the other command later
-                        .requires(source -> source.hasPermissionLevel(4))
+                        .then(literal("reload")
+                                .requires(Permissions.require("rcc.supporter.reload"))
                                 .executes(context -> {
                                     Supporter.reloadSupporters(Main.db, Main.userManager, Main.groupManager);
-                                    return 1;
+                                    return Command.SINGLE_SUCCESS;
                                 })
+                        )
         );
     }
 }
